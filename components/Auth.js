@@ -40,7 +40,7 @@ export default function Auth() {
   };
 
   const authUser = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // イベントが発生したときにイベントに対してブラウザで設定されているデフォルトの動作をキャンセルさせることができる
     if (isLogin) {
       login();
     } else {
